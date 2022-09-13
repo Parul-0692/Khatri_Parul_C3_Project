@@ -60,4 +60,14 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+
+    //<<<<<<<<<<<<<<<<<<<<<<<DISPLAY ORDER TOTAL>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    @Test
+    public void display_total_order_value_for_the_added_menu_items(){
+        int ItemTotalValue = restaurant.displayOrderTotalAmount(restaurant.getMenu());
+    }
+
+    //<<<<<<<<<<<<<<<<<<<<<<<DISPLAY ORDER TOTAL>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
