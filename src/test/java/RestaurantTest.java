@@ -4,6 +4,8 @@ import org.mockito.Mockito;
 
 import java.time.LocalTime;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RestaurantTest {
@@ -67,6 +69,7 @@ class RestaurantTest {
     @Test
     public void display_total_order_value_for_the_added_menu_items(){
         int ItemTotalValue = restaurant.displayOrderTotalAmount(restaurant.getMenu());
+        assertThat(ItemTotalValue,equalTo(388));
     }
 
     //<<<<<<<<<<<<<<<<<<<<<<<DISPLAY ORDER TOTAL>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
